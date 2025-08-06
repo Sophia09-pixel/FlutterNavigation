@@ -178,6 +178,19 @@ class TalkPage extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(talk.description, style: const TextStyle(fontSize: 14)),
+            const Spacer(),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton.icon(
+                onPressed: () => Navigator.pop(context),
+                icon: const Icon(Icons.arrow_back),
+                label: const Text("Voltar"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.indigo,
+                  foregroundColor: Colors.white,
+                ),
+              ),
+            ),
           ],
         ),
       ),
